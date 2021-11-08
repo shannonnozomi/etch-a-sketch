@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch-A-Sketch</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
- </head>
-<body>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="etch">
-        <h1>Etch-A-Sketch</h1>
-        <div id="main"></div>
-        <div class="buttons">
-            <button class="size" onclick="sizeAdjust();">Pixel Size<br><span class="big">Big</span><br><span class="small">Small</span></button>
-            <div class="pixelColor"><input type="color" id="colorPicker" name="Color Picker" value="#747470" ><label for="Color Picker">Pixel Color Picker</label></div>
-            <button class="clear" onclick="refresh();">Clear</button>
+      <h1>Etch-A-Sketch</h1>
+      <div id="main"></div>
+      <div class="buttons">
+        <button class="size" onclick="sizeAdjust();">
+          Pixel Size<br /><span
+            id="big"
+            style="background-color: gold; font-size: 35px"
+            >BIG</span
+          ><br /><span id="small">Small</span>
+        </button>
+        <div class="pixelColor">
+          <input
+            type="color"
+            id="colorPicker"
+            name="Color Picker"
+            value="#747470"
+          /><label for="Color Picker">Pixel Color Picker</label>
         </div>
-        <script type="text/javascript" src="index.js"></script>
-</body>
+        <button class="clear" onclick="refresh();">Clear</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
 </html>
